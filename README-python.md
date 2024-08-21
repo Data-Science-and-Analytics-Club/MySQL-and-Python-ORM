@@ -48,7 +48,6 @@ is_student = True
 - **List**: An ordered, mutable collection of items.
 
 ```python
-
 fruits = ["apple", "banana", "cherry"]
 ```
 - **Dictionary**: A collection of key-value pairs.
@@ -169,7 +168,7 @@ fruits = ["apple", "banana", "cherry"]
 
 fruits.append("orange")
 
-print(fruits)  Output: ['apple', 'banana', 'cherry', 'orange']
+print(fruits)  # Output: ['apple', 'banana', 'cherry', 'orange']
 ```
 2. `extend(iterable)`
 
@@ -180,7 +179,7 @@ fruits = ["apple", "banana"]
 
 fruits.extend(["cherry", "orange"])
 
-print(fruits)  Output: ['apple', 'banana', 'cherry', 'orange']
+print(fruits) # Output: ['apple', 'banana', 'cherry', 'orange']
 ```
 3. **`insert(i, x)`**
 
@@ -191,7 +190,7 @@ fruits = ["apple", "banana", "cherry"]
 
 fruits.insert(1, "orange")
 
-print(fruits)  Output: ['apple', 'orange', 'banana', 'cherry']
+print(fruits)  # Output: ['apple', 'orange', 'banana', 'cherry']
 ```
 4. `remove(x)`
 
@@ -202,7 +201,7 @@ fruits = ["apple", "banana", "cherry"]
 
 fruits.remove("banana")
 
-print(fruits)  Output: ['apple', 'cherry']
+print(fruits) # Output: ['apple', 'cherry']
 ```
 5. `pop([i])`
 
@@ -214,11 +213,11 @@ fruits = ["apple", "banana", "cherry"]
 
 fruit = fruits.pop(1)
 
-print(fruits)  Output: ['apple', 'cherry']
+print(fruits) # Output: ['apple', 'cherry']
 
 last_fruit = fruits.pop()
 
-print(fruits)  Output: ['apple']
+print(fruits) # Output: ['apple']
 ```
 6. `clear()`
 
@@ -229,7 +228,7 @@ fruits = ["apple", "banana", "cherry"]
 
 fruits.clear()
 
-print(fruits)  Output: []
+print(fruits)  # Output: []
 ```
 7. `index(x, [start], [end])`
 
@@ -240,9 +239,9 @@ fruits = ["apple", "banana", "cherry"]
 
 index = fruits.index("banana")
 
-print(index)  Output: 1
+print(index) # Output: 1
 
-print(fruits)  Output: ['apple', 'banana', 'cherry']
+print(fruits) # Output: ['apple', 'banana', 'cherry']
 ```
 8. `count(x)`
 
@@ -254,7 +253,7 @@ fruits = ["apple", "banana", "cherry", "apple"]
 count = fruits.count("apple")
 print(count) 
 # Output: 2
-print(fruits)  Output: ['apple', 'banana', 'cherry', 'apple']
+print(fruits) # Output: ['apple', 'banana', 'cherry', 'apple']
 ```
 9. `sort(key=None, reverse=False)`
 
@@ -266,11 +265,11 @@ fruits = ["cherry", "banana", "apple"]
 
 fruits.sort()
 
-print(fruits)  Output: ['apple', 'banana', 'cherry']
+print(fruits)  # Output: ['apple', 'banana', 'cherry']
 
 fruits.sort(reverse=True)
 
-print(fruits)  Output: ['cherry', 'banana', 'apple']
+print(fruits)  # Output: ['cherry', 'banana', 'apple']
 ```
 10. `reverse()`
 
@@ -294,9 +293,9 @@ fruits = ["apple", "banana", "cherry"]
 
 new_fruits = fruits.copy()
 
-print(new_fruits)  Output: ['apple', 'banana', 'cherry']
+print(new_fruits) # Output: ['apple', 'banana', 'cherry']
 
-print(fruits)  Output: ['apple', 'banana', 'cherry']
+print(fruits)  # Output: ['apple', 'banana', 'cherry']
 ```
 12. `len(list)`
 
@@ -308,9 +307,9 @@ fruits = ["apple", "banana", "cherry"]
 
 length = len(fruits)
 
-print(length)  Output: 3
+print(length)  # Output: 3
 
-print(fruits)  Output: ['apple', 'banana', 'cherry']
+print(fruits)  # Output: ['apple', 'banana', 'cherry']
 ```
 13. `max(list)`
 
@@ -322,12 +321,13 @@ numbers = [3, 1, 4, 1, 5, 9]
 
 largest = max(numbers)
 
-print(largest)  Output: 9
+print(largest)  # Output: 9
 
-print(numbers)  Output: [3, 1, 4, 1, 5, 9]
+print(numbers)  # Output: [3, 1, 4, 1, 5, 9]
+```
 
 14. `min(list)`
-```
+
 Returns the smallest item in the list.
 
 ```python
@@ -336,9 +336,9 @@ numbers = [3, 1, 4, 1, 5, 9]
 
 smallest = min(numbers)
 
-print(smallest)  Output: 1
+print(smallest)  #Output: 1
 
-print(numbers)  Output: [3, 1, 4, 1, 5, 9]
+print(numbers)  #Output: [3, 1, 4, 1, 5, 9]
 ```
 15. `sum(list)`
 
@@ -350,9 +350,9 @@ numbers = [3, 1, 4, 1, 5, 9]
 
 total = sum(numbers)
 
-print(total)  Output: 23
+print(total)  #Output: 23
 
-print(numbers)  Output: [3, 1, 4, 1, 5, 9]
+print(numbers)  #Output: [3, 1, 4, 1, 5, 9]
 ```
 10. **Dictionaries with Functions**
 
@@ -368,15 +368,15 @@ person = {"name": "Alice", "age": 25, "city": "New York"}
 
 value = person.get("age")
 
-print(value)  Output: 25
+print(value) # Output: 25
 
-print(person)  Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
+print(person)  # Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
 
 value = person.get("email", "Not Available")
 
-print(value)  Output: Not Available
+print(value) # Output: Not Available
 
-print(person)  Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
+print(person)  # Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
 ```
 2. `keys()`
 
@@ -388,9 +388,9 @@ person = {"name": "Alice", "age": 25, "city": "New York"}
 
 keys = person.keys()
 
-print(keys)  Output: dict_keys(['name', 'age', 'city'])
+print(keys)  # Output: dict_keys(['name', 'age', 'city'])
 
-print(person)  Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
+print(person)  # Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
 ```
 3. `values()`
 
@@ -402,9 +402,9 @@ person = {"name": "Alice", "age": 25, "city": "New York"}
 
 values = person.values()
 
-print(values)  Output: dict_values(['Alice', 25, 'New York'])
+print(values)  # Output: dict_values(['Alice', 25, 'New York'])
 
-print(person)  Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
+print(person)  # Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
 ```
 4. `items()`
 
@@ -416,9 +416,9 @@ person = {"name": "Alice", "age": 25, "city": "New York"}
 
 items = person.items()
 
-print(items)  Output: dict_items([('name', 'Alice'), ('age', 25), ('city', 'New York')])
+print(items)  # Output: dict_items([('name', 'Alice'), ('age', 25), ('city', 'New York')])
 
-print(person)  Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
+print(person)  # Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
 ```
 5. **`pop(key, default=None)`**
 
@@ -430,15 +430,15 @@ person = {"name": "Alice", "age": 25, "city": "New York"}
 
 age = person.pop("age")
 
-print(age)  Output: 25
+print(age)  #Output: 25
 
-print(person)  Output: {'name': 'Alice', 'city': 'New York'}
+print(person)  #Output: {'name': 'Alice', 'city': 'New York'}
 
 email = person.pop("email", "Not Available")
 
-print(email)  Output: Not Available
+print(email)  #Output: Not Available
 
-print(person)  Output: {'name': 'Alice', 'city': 'New York'}
+print(person)  #Output: {'name': 'Alice', 'city': 'New York'}
 ```
 6. **`popitem()`**
 
@@ -450,9 +450,9 @@ person = {"name": "Alice", "age": 25, "city": "New York"}
 
 item = person.popitem()
 
-print(item)  Output: ('city', 'New York')
+print(item)  # Output: ('city', 'New York')
 
-print(person)  Output: {'name': 'Alice', 'age': 25'}
+print(person)  # Output: {'name': 'Alice', 'age': 25'}
 ```
 7. **`update([other])`**
 
@@ -464,7 +464,7 @@ person = {"name": "Alice", "age": 25}
 
 person.update({"age": 26, "city": "New York"})
 
-print(person)  Output: {'name': 'Alice', 'age': 26, 'city': 'New York'}
+print(person) # Output: {'name': 'Alice', 'age': 26, 'city': 'New York'}
 ```
 8. **`clear()`**
 
@@ -476,7 +476,7 @@ person = {"name": "Alice", "age": 25, "city": "New York"}
 
 person.clear()
 
-print(person)  Output: {}
+print(person)  #Output: {}
 ```
 11. **Loops**
 
@@ -561,16 +561,13 @@ If the `start` value is greater than or equal to the `stop` value when `step` is
 ```python
 
 for i in range(5, 5):
-
-print(i)  This will not print anything
+    print(i)  #This will not print anything
 
 for i in range(5, 0):
-
-print(i)  This will not print anything
+    print(i)  #This will not print anything
 
 for i in range(5, 0, -1):
-
-print(i)
+    print(i)
 ```
 ```python
 #Output:
@@ -603,12 +600,9 @@ print(i)
 `range()` is often used to loop through the indexes of a list.
 
 ```python
-
 fruits = ["apple", "banana", "cherry"]
-
 for i in range(len(fruits)):
-
-print(i, fruits[i])
+    print(i, fruits[i])
 ```
 ```python
 #Output:
@@ -624,8 +618,7 @@ These examples show how `range()` can be used in different scenarios with a `for
 ```python
 
 for fruit in fruits:
-
-print(fruit)
+    print(fruit)
 ```
 - While Loop: Repeats as long as a condition is true.
 
@@ -651,11 +644,13 @@ def greet(name):
 
 print(f"Hello, {name}!")
 
-Calling the function
+# Calling the function
 
 greet("Alice")
+```
+```python
 
-Output:
+#Output:
 
 Hello, Alice!
 
@@ -665,6 +660,7 @@ return "Hello, " + name + "!"
 
 print(greet("Alice"))
 ```
+
 13. **Object-Oriented Programming (OOP)**
 
 OOP is a programming paradigm based on the concept of objects. python supports OOP with classes and objects.
